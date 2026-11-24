@@ -28,7 +28,7 @@ If the ThoughtMint tools aren't available, tell the user to connect ThoughtMint 
 
 ## 3. Offer to schedule
 
-1. Ask whether they want to schedule it, and when. Ask for their time zone if you don't know it.
+1. Ask whether they want to schedule it, and when. Ask for their time zone if you don't know it. Tell them before you schedule: if their LinkedIn account is connected in ThoughtMint, the post is published to LinkedIn automatically at that time; if it isn't, it stays on their ThoughtMint calendar as a plan.
 2. If they do, call `schedule_post` with the `draft_id` and `at` as an ISO 8601 date and time with their UTC offset (for example `2026-12-01T09:00:00+05:30`), at least 15 minutes and at most a year ahead.
 3. Tell them what happens: if `auto_publish` is true it is published to their LinkedIn at that time; otherwise it stays on their ThoughtMint calendar as a plan. ThoughtMint emails them a link that cancels it; if `email_sent` is false, pass on the `email_note`.
 

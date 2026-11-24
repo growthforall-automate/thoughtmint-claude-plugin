@@ -25,6 +25,5 @@ If the ThoughtMint tools aren't available, tell the user to connect ThoughtMint 
 
 `write_carousel` returns text only: it doesn't design the carousel or save it in ThoughtMint, and it can't be scheduled from here. Tell the user how to finish it:
 
-1. Open ThoughtMint (https://thoughtmint.ai) and choose **Create carousel**.
-2. Use this slide text in the editor, pick a design, and export the PDF.
-3. Post the PDF on LinkedIn as a document post, with the caption. If they want it on their ThoughtMint calendar, they can schedule it from the app; carousels are never published automatically.
+1. Open ThoughtMint (https://thoughtmint.ai) and design the carousel in its carousel editor (**Create carousel**), using this slide text.
+2. Download the PDF in ThoughtMint and post it on LinkedIn by hand, with the caption. Carousels never go out automatically.

@@ -11,7 +11,7 @@ If the ThoughtMint tools aren't available, tell the user to connect ThoughtMint 
 
 ## 1. Check what's available
 
-1. Call `get_account_status`. Tell the user how many words they have left this month. Each post uses roughly 150–400 words of it, depending on length. If they have fewer words than the week needs, say so and suggest fewer or shorter posts.
+1. Call `get_account_status`. Tell the user how many words they have left this month. Writing a post uses about as many words as the post itself (a medium post is roughly 150–300 words); revisions and new hooks use more. If they have fewer words than the week needs, say so and suggest fewer or shorter posts.
 2. Call `get_voice_profile` to learn their role, audience and content pillars.
 3. Call `list_ideas` to see their saved ideas.
 4. Call `list_posts` with `status: "scheduled"` to see what is already on their calendar, so the plan doesn't clash with it.
@@ -34,7 +34,7 @@ Each call to `write_post`, `refine_post`, `suggest_hooks` and `generate_ideas` u
 
 ## 4. Schedule
 
-1. Confirm the final list with the user: each post's day and time.
+1. Confirm the final list with the user: each post's day and time. Tell them before you schedule: if their LinkedIn account is connected in ThoughtMint, each text post is published to LinkedIn automatically at its time; if it isn't, the posts stay on their ThoughtMint calendar as plans.
 2. For each post they approve, call `schedule_post` with its `draft_id` and `at` as an ISO 8601 date and time with their UTC offset (for example `2026-12-01T09:00:00+05:30`). Times must be at least 15 minutes and at most a year ahead.
 3. Report the result for each post:
    - if `auto_publish` is true, it will be published to their LinkedIn at that time;
