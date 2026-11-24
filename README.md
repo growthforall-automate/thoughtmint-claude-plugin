@@ -22,7 +22,7 @@ You can also ask Claude to use the ThoughtMint tools directly, for example "show
 - To write text, ThoughtMint sends the tool input and your profile details to OpenAI through its API. ThoughtMint does not use your content to train AI models.
 - Writing tools use words from your ThoughtMint plan's monthly allowance. Reading, saving ideas and scheduling don't.
 - For a blog article, Claude reads the web page with its own web tools before calling ThoughtMint.
-- Scheduling: a scheduled text post is published to LinkedIn at that time only if your LinkedIn profile is connected in ThoughtMint; otherwise it stays on your calendar as a plan. Carousels are never published automatically. ThoughtMint emails you for every post scheduled from Claude, with a link that cancels it. The skills confirm each post and its time with you before scheduling it.
+- Scheduling: a scheduled text post is published to LinkedIn at that time only if your LinkedIn profile is connected in ThoughtMint; otherwise it stays on your calendar as a plan. Carousels are never published automatically. ThoughtMint tries to email you a link that cancels each post scheduled from Claude, and you can always cancel it in ThoughtMint. The skills confirm each post and its time with you before scheduling it.
 - A `source_url` passed to ThoughtMint is stored with the draft as its source. ThoughtMint doesn't fetch it.
 
 ## Install
