@@ -37,8 +37,8 @@ Each call to `write_post`, `refine_post`, `suggest_hooks` and `generate_ideas` u
 1. Confirm the final list with the user: each post's day and time. Tell them before you schedule: if their LinkedIn account is connected in ThoughtMint, each text post is published to LinkedIn automatically at its time; if it isn't, the posts stay on their ThoughtMint calendar as plans.
 2. For each post they approve, call `schedule_post` with its `draft_id` and `at` as an ISO 8601 date and time with their UTC offset (for example `2026-12-01T09:00:00+05:30`). Times must be at least 15 minutes and at most a year ahead.
 3. Report the result for each post:
-   - if `auto_publish` is true, it will be published to their LinkedIn at that time;
-   - if false, it stays on their ThoughtMint calendar as a plan, and they post it themselves;
+   - if `goes_out_automatically` is true, it will be published to their LinkedIn at that time;
+   - if false, it stays on their ThoughtMint calendar as a plan and they post it themselves; `why_not` says why;
    - ThoughtMint emails them a link that cancels the post. If `email_sent` is false, pass on the `email_note`.
 4. If they change a scheduled draft later with `refine_post`, call `schedule_post` again with the same `draft_id` so the calendar gets the new text.
 
