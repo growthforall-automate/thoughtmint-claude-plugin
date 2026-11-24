@@ -1,0 +1,20 @@
+{
+  "name": "thoughtmint",
+  "displayName": "ThoughtMint",
+  "version": "0.1.0",
+  "description": "Plan, write and schedule LinkedIn posts and carousels in your own voice with your ThoughtMint account: a weekly posting plan, a post from a blog article, and carousel text from an idea.",
+  "author": {
+    "name": "ThoughtMint",
+    "email": "info@thoughtmint.ai",
+    "url": "https://thoughtmint.ai"
+  },
+  "homepage": "https://thoughtmint.ai/claude/",
+  "repository": "https://github.com/Getgoinng/thoughtmint-claude-plugin",
+  "license": "MIT",
+  "keywords": ["linkedin", "writing", "content", "carousel", "scheduling", "personal-brand"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://thoughtmint.ai/claude/",
+  "supportUrl": "https://thoughtmint.ai/claude/",
+  "privacyPolicyUrl": "https://thoughtmint.ai/privacy/",
+  "termsOfServiceUrl": "https://thoughtmint.ai/terms/"
+}

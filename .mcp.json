@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "thoughtmint": {
+      "type": "http",
+      "url": "https://thoughtmint.ai/mcp"
+    }
+  }
+}
